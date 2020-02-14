@@ -256,19 +256,3 @@ const showResult = async () => {
   }
 };
 showResult();
-
-const fetchDiscord = async (content, whurl) => {
-  const msg = { content };
-  try {
-    let response = await fetch(whurl, {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify(msg)
-    });
-  } catch (err) {
-    console.log(err);
-  }
-};
-
-content += `** ${players[i].name} ** :military_medal
-`;
